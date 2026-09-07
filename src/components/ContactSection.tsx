@@ -8,7 +8,7 @@ export default function ContactSection() {
   const isHome = location.pathname === "/";
 
   function copyEmail() {
-    navigator.clipboard.writeText("jv@jvpereiradesign.com");
+    navigator.clipboard.writeText("jvpereiradesign@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }
