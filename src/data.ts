@@ -125,6 +125,7 @@ export const PROJECTS: Project[] = [
     result: "Produto com identidade própria, fluxos validados e protótipo interativo entregue para desenvolvimento, reduzindo ambiguidade no handoff.",
     resultDesktopImgs: [
       new URL("./imports/Home_page_PDE.jpg", import.meta.url).href,
+      new URL("./imports/pde_figma_print.jpg", import.meta.url).href,
       new URL("./imports/capta__o_de_psicologo_PDE.jpg", import.meta.url).href,
       new URL("./imports/sele_ao_de_psicologo_PDE.jpg", import.meta.url).href,
     ],
