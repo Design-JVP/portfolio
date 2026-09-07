@@ -1,0 +1,15 @@
+{
+  "title": "João Pereira Protfolio",
+  "description": "Apaixonado em encontrar soluções para produtos incríveis e completamente viciado no Figma, eu desenvolvo produtos digitais inconfundíveis, do research ao deploy.",
+  "language": "pt",
+  "icons": {
+    "icon": "/.figma/make/favicon.png"
+  },
+  "openGraph": {
+    "image": "/.figma/make/social-image.png"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
