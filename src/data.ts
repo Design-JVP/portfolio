@@ -168,7 +168,7 @@ export const EXPERIENCE = [
 ];
 
 export const CONTACT_ITEMS = [
-  { label: "Email", val: "jv@jvpereiradesign.com", labelColor: "#535353" },
+  { label: "Email", val: "jvpereiradesign@gmail.com", labelColor: "#535353" },
   { label: "LinkedIn", val: "/in/jvpereiradesign", labelColor: "#535353" },
   { label: "telefone", val: "+55 41 992662573", labelColor: "#535353" },
 ];
