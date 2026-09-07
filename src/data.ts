@@ -124,14 +124,14 @@ export const PROJECTS: Project[] = [
     ],
     result: "Produto com identidade própria, fluxos validados e protótipo interativo entregue para desenvolvimento, reduzindo ambiguidade no handoff.",
     resultDesktopImgs: [
-      "./imports/Home_page_PDE.jpg", import.meta.url).href,
-      "./imports/capta__o_de_psicologo_PDE.jpg", import.meta.url).href,
-      "./imports/sele_ao_de_psicologo_PDE.jpg", import.meta.url).href,
+      new URL("./imports/Home_page_PDE.jpg", import.meta.url).href,
+      new URL("./imports/capta__o_de_psicologo_PDE.jpg", import.meta.url).href,
+      new URL("./imports/sele_ao_de_psicologo_PDE.jpg", import.meta.url).href,
     ],
     resultMobileImgs: [
-      "./imports/iPhone_13___14_-_1.jpg", import.meta.url).href,
-      "./imports/next_PDE_mobile.jpg", import.meta.url).href,
-      "./imports/memorial.jpg", import.meta.url).href,
+      new URL("./imports/iPhone_13___14_-_1.jpg", import.meta.url).href,
+      new URL("./imports/next_PDE_mobile.jpg", import.meta.url).href,
+      new URL("./imports/memorial.jpg", import.meta.url).href,
     ],
     impact: [
       { value: "100%", label: "Branding do zero" },
