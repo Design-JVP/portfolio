@@ -190,12 +190,12 @@ export default function ProjectPage() {
 
             {/* Two-column photo grid */}
             {(project.resultDesktopImgs?.length || project.resultMobileImgs?.length) ? (
-              <div className="grid grid-cols-[1.5fr_1fr] gap-6 items-stretch">
+              <div className="flex flex-col gap-6 md:grid md:grid-cols-[1.5fr_1fr] md:gap-6 md:items-stretch">
                 {/* Desktop column — 16:9 */}
                 {project.resultDesktopImgs?.length ? (
                   <div className="flex flex-col justify-between h-full gap-4">
                     {project.resultDesktopImgs.map((src, i) => (
-                      <div key={i} className="relative bg-[#f0f0f0] overflow-hidden w-full" style={{ aspectRatio: "16/9", minHeight: "350px" }}>
+                      <div key={i} className="relative bg-[#f0f0f0] overflow-hidden w-full md:min-h-[350px]" style={{ aspectRatio: "16/9" }}>
                         <img src={src} alt={`Resultado desktop ${i + 1}`} className="w-full h-full object-cover" style={{ objectPosition: "center top" }} />
                         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 50%, white 100%)" }} />
                       </div>
@@ -227,13 +227,16 @@ export default function ProjectPage() {
             <h2 style={{ fontFamily: "'Geist', sans-serif", letterSpacing: "-0.03em" }} className="text-[28px] font-800 text-white mb-14">
               Impacto
             </h2>
-            <div className="grid grid-cols-1 gap-0 border-l border-white/08" style={{ gridTemplateColumns: `repeat(${project.impact.length}, 1fr)` }}>
+            <div
+              className="impact-grid gap-y-8 gap-x-0 border-l border-white/08 md:gap-y-0"
+              style={{ "--impact-cols": project.impact.length } as import("react").CSSProperties}
+            >
               {project.impact.map(({ value, label }) => (
-                <div key={label} className="border-r border-white/08 px-12 py-8">
-                  <div style={{ fontFamily: "'Geist', sans-serif", letterSpacing: "-0.04em" }} className="text-[52px] font-800 text-white leading-none mb-2">
+                <div key={label} className="border-r border-white/08 px-6 py-4 md:px-12 md:py-8">
+                  <div style={{ fontFamily: "'Geist', sans-serif", letterSpacing: "-0.04em" }} className="text-[32px] md:text-[52px] font-800 text-white leading-none mb-2">
                     {value}
                   </div>
-                  <div className="text-[12px] font-500 tracking-[0.1em] uppercase text-[#555]">{label}</div>
+                  <div className="text-[11px] md:text-[12px] font-500 tracking-[0.1em] uppercase text-[#555]">{label}</div>
                 </div>
               ))}
             </div>
