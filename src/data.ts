@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
         title: "Definição e estratégia",
         desc: "Priorizamos as oportunidades com base em impacto e viabilidade técnica, avaliados a partir dos dados da pesquisa. Usando metodologias ágeis (SCRUM), definimos essas prioridades em sprints e seguimos para o desenvolvimento.",
         icons: ["clickup", "miro", "googlesheets", "googlegemini"],
-        mockupDesktop: new URL("./imports/dados-giga.jpg", import.meta.url).href,
+        mockupDesktop: new URL("./imports/dados-giga.png", import.meta.url).href,
       },
       {
         title: "Design system",
@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
         title: "Branding e identidade", 
         desc: "Criamos a identidade visual da plataforma, com redesign do logotipo, nova paleta de cores, tipografia e guia de estilo aplicado ao produto digital. Isso nos possibilitou desenvolver um design system no começo do projeto, que foi crucial para a comunicação clara e assertiva.", 
         icons: ["adobeillustrator", "adobephotoshop", "figma"] 
-        //mockupDesktop: new URL("./imports/pde-veio.jpg", import.meta.url).href,
+        mockupDesktop: new URL("./imports/pde-veio.png", import.meta.url).href,
       },
       {
         title: "Arquitetura de fluxos", 
