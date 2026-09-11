@@ -45,3 +45,16 @@ html {
 .animate-slide-across {
   animation: slide-across 14s ease-in-out infinite;
 }
+
+/* Impact numbers: 2-per-row on mobile so values never overflow the viewport;
+   restores the original single-row layout (N equal columns) from md up. */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .impact-grid {
+    grid-template-columns: repeat(var(--impact-cols, 1), 1fr);
+  }
+}

@@ -16,7 +16,7 @@ export default function ContactSection() {
   return (
     <>
       <section id="contact" className="py-40">
-        <div className="max-w-[1100px] mx-auto px-6 flex items-start justify-between gap-16">
+        <div className="max-w-[1100px] mx-auto px-6 flex flex-col items-start gap-10 md:flex-row md:items-start md:justify-between md:gap-16">
           <div>
             <h2 style={{ fontFamily: "'Geist', sans-serif", letterSpacing: "-0.04em" }} className="text-[36px] font-800 mb-4">
               Contato
@@ -27,8 +27,8 @@ export default function ContactSection() {
           </div>
           <div className="space-y-4 pt-2">
             {CONTACT_ITEMS.map(({ label, val, labelColor }) => (
-              <div key={label} className="flex items-center gap-4">
-                <span className="text-[10px] font-600 tracking-[0.14em] uppercase w-16" style={{ color: labelColor }}>{label}</span>
+              <div key={label} className="flex flex-col items-start gap-1 md:flex-row md:items-center md:gap-4">
+                <span className="text-[10px] font-600 tracking-[0.14em] uppercase md:w-16" style={{ color: labelColor }}>{label}</span>
                 {label === "Email" ? (
                   <button onClick={copyEmail} className="text-[13px] text-black font-500 underline cursor-pointer" style={{ fontFamily: "'Geist', sans-serif", background: "none", border: "none", padding: 0 }}>{val}</button>
                 ) : label === "telefone" ? (

@@ -55,14 +55,21 @@ export default function Home() {
               className={`relative flex gap-8 py-8 border-b border-black/08 items-stretch group ${p.id !== "03" ? "cursor-pointer" : "cursor-default opacity-40"}`}
               style={{ color: "inherit" }}
             >
-              <div className="flex-shrink-0 w-[160px] h-[160px] overflow-hidden self-stretch" style={{ minHeight: "160px", border: p.id === "03" ? "1px solid #0a0a0a" : "none", background: p.id === "03" ? "white" : undefined }}>
-                {p.id !== "03" && (
-                  <img
-                    src={p.img}
-                    alt={p.imgAlt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                )}
+              <div className="flex-shrink-0 flex flex-col gap-3 w-[160px] md:gap-0">
+                <div className="w-[160px] h-[160px] overflow-hidden self-stretch" style={{ minHeight: "160px", border: p.id === "03" ? "1px solid #0a0a0a" : "none", background: p.id === "03" ? "white" : undefined }}>
+                  {p.id !== "03" && (
+                    <img
+                      src={p.img}
+                      alt={p.imgAlt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-1.5 md:hidden">
+                  {p.tags.map((t) => (
+                    <span key={t} className="px-2.5 py-0.5 border border-black/10 text-[10px] font-500 tracking-[0.06em] uppercase text-[#888]">{t}</span>
+                  ))}
+                </div>
               </div>
 
               <div className="flex-1 min-w-0 flex flex-col justify-between py-1">
@@ -77,7 +84,7 @@ export default function Home() {
                   </div>
                   <p className="text-[13px] text-[#666] leading-relaxed mb-4 max-w-[520px]">{p.shortDesc}</p>
                 </div>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="hidden md:flex flex-wrap gap-1.5">
                   {p.tags.map((t) => (
                     <span key={t} className="px-2.5 py-0.5 border border-black/10 text-[10px] font-500 tracking-[0.06em] uppercase text-[#888]">{t}</span>
                   ))}
