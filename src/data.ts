@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
         title: "Branding e identidade", 
         desc: "Criamos a identidade visual da plataforma, com redesign do logotipo, nova paleta de cores, tipografia e guia de estilo aplicado ao produto digital. Isso nos possibilitou desenvolver um design system no começo do projeto, que foi crucial para a comunicação clara e assertiva.", 
         icons: ["adobeillustrator", "adobephotoshop", "figma"] 
-        new URL("./imports/pde-veio.jpg", import.meta.url).href,
+        mockupDesktop: new URL("./imports/pde-veio.jpg", import.meta.url).href,
       },
       {
         title: "Arquitetura de fluxos", 
