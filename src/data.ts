@@ -50,30 +50,32 @@ export const PROJECTS: Project[] = [
     process: [
       {
         title: "Pesquisa e descoberta",
-        desc: "Entrevistas com usuários, análise heurística do produto atual e mapeamento de jornada para identificar os principais pontos de atrito na experiência de compra.",
+        desc: "Realizamos entrevistas com usuários, análises heurísticas do produto atual e mapeamos jornadas para identificar os principais pontos de atrito na experiência de compra.",
         icons: ["maze", "miro", "googlesheets"],
+        mockupDesktop: new URL("./imports/gigantec-veia.jpg", import.meta.url).href,
       },
       {
         title: "Definição e estratégia",
-        desc: "Priorização de oportunidades com base em impacto e viabilidade. Definição dos princípios de design e arquitetura de informação revisada.",
+        desc: "Priorizamos as oportunidades com base em impacto e viabilidade técnica, avaliados a partir dos dados da pesquisa. Usando metodologias ágeis (SCRUM), definimos essas prioridades em sprints e seguimos para o desenvolvimento.",
         icons: ["clickup", "miro", "googlesheets", "googlegemini"],
+        mockupDesktop: new URL("./imports/dados-giga.jpg", import.meta.url).href,
       },
       {
         title: "Design system",
-        desc: "Criação de uma biblioteca de componentes escalável com tokens de cor, tipografia e espaçamento, garantindo consistência e acelerando a entrega.",
+        desc: "Criamos componentes escaláveis com tokens de cor, tipografia e espaçamento, garantindo consistência e acelerando a entrega. O design System foi intgrado às metricas já estabelecidas da empresa, reforçando parâmentros que já eram analisados anteriormente, como quantidade de clicks em cada seção do site, mas agora, ainda mais rastreável por tipo de botão.",
         icons: ["figma", "claude", "letter:S"],
         mockupDesktop: new URL("./imports/componentes-1.jpg", import.meta.url).href,
         mockupMobile: new URL("./imports/areas_logadassystem.jpg", import.meta.url).href,
       },
       {
         title: "Prototipação e teste",
-        desc: "Protótipos de alta fidelidade para desktop e mobile, com ciclos de teste com usuários para validar decisões antes do handoff.",
+        desc: "Desenvolvemos protótipos de alta fidelidade para desktop e mobile, com ciclos de teste com usuários para validar decisões antes do handoff. O desenvolvimento foi realizado com o apoio direto dos arquivos do Figma e documentação. Isso acelerou a implementação de todo o visual, com a equipe de TI entregando o resultado idêntico ao protótipo em 9 dias.",
         icons: ["figma", "claude", "letter:M", "googlegemini", "maze", "clickup", "miro", "framer"],
         mockupDesktop: new URL("./imports/Captura_de_tela_2026-09-04_133633.png", import.meta.url).href,
         mockupMobile: new URL("./imports/Captura_de_tela_2026-09-06_205031.png", import.meta.url).href,
       },
     ],
-    result: "Interface modernizada com linguagem visual coesa, fluxos de compra simplificados e design system documentado pronto para implementação.",
+    result: "A Interface foi modernizada com linguagem visual coesa, os fluxos de compra foram simplificados e o site bateu todas as metas estabelecidas para o projeto nos primeiros 3 meses.",
     resultDesktopImgs: [
       new URL("./imports/HOME_-_PRIORIDADES_JO_O.jpg", import.meta.url).href,
       new URL("./imports/P_GINA_DE_PRODUTO-2.jpg", import.meta.url).href,
@@ -89,14 +91,14 @@ export const PROJECTS: Project[] = [
       { value: "-24%", label: "Bounce Rate" },
       { value: "-21%", label: "Abandono de Carrinho" },
       { value: "+1.2", label: "Nota no RA" },
-      { value: "-1.5s", label: "Load Time Google" },
-      { value: "4.7/5", label: "Pesquisa de Satisfação" },
+      { value: "7/10", label: "Pesquisa CSAT, antes 5/10" },
+      { value: "4.7/5", label: "Pesquisa de Satisfação NPS, antes 3.9" },
     ],
   },
   {
     id: "02",
     title: "PDE",
-    shortDesc: "Desenvolvimento completo do Web app para agendamento de terapia. branding e design visual. Definição de fluxos e prototipagem usando o Figma e pacote Adobe. Protótipo funcional e interativo.",
+    shortDesc: "Desenvolvimento completo do Web app para agendamento de terapia, branding e design visual. Definição de fluxos e prototipagem usando o Figma e pacote Adobe. Protótipo funcional e interativo.",
     tags: ["Mobile", "Prototipagem", "Branding"],
     year: "2024",
     img: new URL("./imports/Purple_Gradient_Modern_Laptop_Mockup_Instagram_Post_6_.jpg", import.meta.url).href,
@@ -116,13 +118,26 @@ export const PROJECTS: Project[] = [
       { name: "ClickUp", slug: "clickup" },
       { name: "Miro", slug: "miro" },
     ],
-    problem: "A plataforma precisava de uma identidade visual forte e uma experiência de uso clara para os usuários da plataforma. Sem branding definido e sem fluxos estruturados, o produto não conseguia transmitir confiança nem converter novos pacientes.",
+    problem: "A plataforma precisava de uma identidade visual forte e uma experiência de uso clara para os usuários. Sem branding definido e sem fluxos estruturados, o produto não conseguia transmitir confiança nem converter novos pacientes. Além disso, o cadastro e triagem eram feitos manualmente, paciente por paciente. Era necessário um lugar que transmitisse confiança e fosse claro o caminho que o usuário deveria seguir.",
     process: [
-      { title: "Branding e identidade", desc: "Criação da identidade visual da plataforma: logotipo, paleta de cores, tipografia e guia de estilo aplicado ao produto digital.", icons: ["adobeillustrator", "adobephotoshop", "figma"] },
-      { title: "Arquitetura de fluxos", desc: "Mapeamento e estruturação dos principais fluxos do Web app — onboarding, dashboard e ações centrais — com foco em clareza e eficiência.", icons: ["figma", "miro"] },
-      { title: "Design e prototipagem", desc: "Desenvolvimento das telas em alta fidelidade no Figma com protótipo interativo completo para validação com stakeholders.", icons: ["figma", "adobexd"] },
+      {
+        title: "Branding e identidade", 
+        desc: "Criamos a identidade visual da plataforma, com redesign do logotipo, nova paleta de cores, tipografia e guia de estilo aplicado ao produto digital. Isso nos possibilitou desenvolver um design system no começo do projeto, que foi crucial para a comunicação clara e assertiva.", 
+        icons: ["adobeillustrator", "adobephotoshop", "figma"] 
+        new URL("./imports/pde-veio.jpg", import.meta.url).href,
+      },
+      {
+        title: "Arquitetura de fluxos", 
+        desc: "Mapeamos e estruturamos os principais fluxos do Web app, onboarding, dashboard e ações centrais, com foco em clareza e eficiência. Montamos visualmente esses fluxos para guiar a ordem e must-haves de cada interface.", 
+        icons: ["figma", "miro"] 
+      },
+      {
+        title: "Design e prototipagem", 
+        desc: "Prototipamos as telas em alta fidelidade no Figma com interatividade total, validamos com os stakeholders e realizamos testes com usuários reais.", 
+        icons: ["figma"] 
+      },
     ],
-    result: "Produto com identidade própria, fluxos validados e protótipo interativo entregue para desenvolvimento, reduzindo ambiguidade no handoff.",
+    result: "O produto tem sua identidade própria, com fluxos validados e um protótipo interativo entregue para desenvolvimento. A marca desenvolvida tem características únicas que são visíveis e reconhecíveis por todo o projeto.",
     resultDesktopImgs: [
       new URL("./imports/Home_page_PDE.jpg", import.meta.url).href,
       new URL("./imports/pde_figma_print.jpg", import.meta.url).href,
@@ -137,7 +152,8 @@ export const PROJECTS: Project[] = [
     impact: [
       { value: "100%", label: "Branding do zero" },
       { value: "3 meses", label: "Até lançamento" },
-      { value: "+60%", label: "Aprovação em testes" },
+      { value: "8.5", label: "Aprovação de usuários" },
+      { value: "+137", label: "Onboardings automáticos" },
     ],
   },
   {
